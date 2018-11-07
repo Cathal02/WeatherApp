@@ -1,0 +1,35 @@
+.home__container {
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  form {
+    width: 50%;
+  }
+
+  text-align: center;
+}
+
+.modal__header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    margin-left: 10px;
+  }
+}
+
+.modal__item {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 10px;
+}
+
+.modal__body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
