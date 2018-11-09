@@ -40,6 +40,8 @@ class ModalExample extends React.Component {
           address
         })
       }
+
+      this.updateButtons()
     })
   }
 
@@ -136,7 +138,6 @@ class ModalExample extends React.Component {
   }
 
   render() {
-
     if (this.state.data.location === undefined) return <p />
     return (
       <div>
