@@ -64,6 +64,7 @@ class ModalExample extends React.Component {
 
   increaseIndex = () => {
     const { index, data } = this.state
+
     if (index + 1 <= data.forecast.forecastday.length)
       this.setState({ index: index + 1 }, () => {
         this.updateButtons()
@@ -72,6 +73,7 @@ class ModalExample extends React.Component {
 
   decreaseIndex = () => {
     const { index } = this.state
+
     if (index - 1 >= 0) {
       this.setState({ index: index - 1 }, () => {
         this.updateButtons()
@@ -93,7 +95,6 @@ class ModalExample extends React.Component {
         lastdayDisabled: false
       })
     } else {
-      console.log('enable both')
       this.setState({
         nextdayDisabled: false,
         lastdayDisabled: false
@@ -105,8 +106,6 @@ class ModalExample extends React.Component {
     const day = moment(
       this.state.data.forecast.forecastday[this.state.index].date
     ).day()
-
-    console.log('current day: ', day)
 
     return this.state.days[day]
   }

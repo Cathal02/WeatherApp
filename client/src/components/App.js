@@ -17,8 +17,9 @@ export default class App extends React.Component {
 
   handleSubmit = e => {
     if (e == undefined) return
-    console.log(e)
+
     const cityName = e.description
+
     const url =
       '/api/weather/?cityName=' +
       cityName +
@@ -32,7 +33,6 @@ export default class App extends React.Component {
     fetch(url)
       .then(res => res.json())
       .then(data => this.setState({ open: true, data }))
-      .then(console.log(this.state.data))
   }
 
   toggle = () => this.setState({ open: !this.state.open })
