@@ -7,8 +7,6 @@
   form {
     width: 50%;
   }
-
-  text-align: center;
 }
 
 .modal__header {
@@ -37,7 +35,51 @@
 body {
   max-height: 100vh;
   height: 100vh;
-  background: url('http://www.winwallpapers.net/w1/2010/05/bright-day.jpg');
+  text-align: center;
+  background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+
+  h1 {
+    color: white;
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
 }
 
 .geosuggest__input {
@@ -48,8 +90,11 @@ body {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   background-color: white;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
   width: 100%;
+  -webkit-box-shadow: 0px 6px 5px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 5px -5px rgba(0, 0, 0, 0.75);
 }
 
 .geosuggest__suggests {
